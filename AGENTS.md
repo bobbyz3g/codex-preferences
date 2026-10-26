@@ -18,6 +18,7 @@
 - When explicitly asked to redesign, rewrite, or break compatibility, reason from the stated goal rather than treating minimal change or compatibility as hidden requirements.
 - Do not overfit a broader design to the first example or immediate workload.
 - Prefer simple, self-explanatory code and a small number of coherent abstractions. Added complexity must solve a concrete problem.
+- Before introducing substantial complexity to address a speculative race condition or security edge case, explain the concrete failure mode, realistic exposure, and implementation and maintenance costs. Get the user's agreement if the change materially expands the requested scope or introduces a meaningful tradeoff. Prefer simple, established safeguards when they adequately address the risk; do not expand scope solely for theoretical robustness.
 - Review public APIs from the caller's perspective, including discoverability, misuse resistance, error behavior, configuration, and future evolution.
 - Prioritize review findings by user impact and risk. Explain the concrete failure or maintenance cost and provide a safe path forward.
 - Omit generic findings already covered by standard tooling. Include visual or cosmetic findings when UI or design quality is part of the task.
