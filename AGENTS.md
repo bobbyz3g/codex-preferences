@@ -37,6 +37,14 @@
 - When commits are requested, keep each commit coherent and reviewable, exclude unrelated changes, and report the commit hash and validation performed.
 - Final handoffs should state the result, validation performed, remaining risks or work, and any required user input.
 
+## Subagent Delegation
+
+- Use subagents when independent work is likely to materially improve speed or coverage after accounting for coordination and integration costs. Keep small or tightly coupled tasks in the main agent.
+- Give each subagent a clear objective, scope, constraints, and expected output. Delegation does not expand the user's authorization.
+- When delegating, favor independent exploration and review. For parallel edits, assign non-overlapping ownership or use isolated worktrees, and coordinate changes to shared interfaces.
+- The main agent owns integration and final verification. Review delegated changes and verify consequential findings against evidence, with scrutiny proportional to their impact and uncertainty.
+- Have subagents return concise results, supporting evidence, validation performed, and unresolved issues. Wait for results needed to complete the task before declaring completion.
+
 ## Tests and Documentation
 
 - Add tests for realistic observable regressions, concrete bugs, and non-trivial invariants or boundaries. Code changes or coverage increases alone are not sufficient justification.
