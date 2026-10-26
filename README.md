@@ -1,10 +1,11 @@
 # Codex 全局指令同步
 
-以本仓库的 `AGENTS.md` 为唯一维护版本。两台电脑分别拉取仓库，再运行安装脚本。项目专属规则仍放在项目自己的 `AGENTS.md` 中。
+以本仓库的英文 `AGENTS.md` 为全局指令来源，`AGENTS.zh-CN.md` 为对应中文版，两个版本同步维护。两台电脑分别拉取仓库，再运行安装脚本。项目专属规则仍放在项目自己的 `AGENTS.md` 中。
 
 ## 文件
 
 - `AGENTS.md`：从现有全局指令直接复制的共享版本。
+- `AGENTS.zh-CN.md`：供阅读和核对的中文版，与英文版保持含义和结构一致；安装脚本仍只安装英文 `AGENTS.md`。
 - `install.ps1`：兼容 Windows PowerShell 5.1 及 PowerShell 7。
 - `.gitattributes`：统一版本库中的文本换行规则。
 
@@ -37,7 +38,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 
 ## 在另一台电脑上使用
 
-使用有权访问私有仓库的 GitHub 账号克隆：
+克隆公开仓库：
 
 ```powershell
 git clone https://github.com/bobbyz3g/codex-preferences.git
@@ -51,7 +52,7 @@ Set-Location codex-preferences
 ## 日常更新
 
 1. 修改前执行 `git pull --ff-only`。
-2. 只编辑仓库里的 `AGENTS.md`，不要直接编辑已安装的副本。
+2. 修改规则时，同时更新仓库里的 `AGENTS.md` 和 `AGENTS.zh-CN.md`，保持条目、结构和含义对应，并放在同一个提交中。不要直接编辑已安装的副本。
 3. 运行 `install.ps1`，然后提交并推送变更。
 4. 在另一台电脑执行 `git pull --ff-only`，成功后运行 `install.ps1`。
 
