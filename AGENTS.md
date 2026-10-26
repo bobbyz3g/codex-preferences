@@ -22,6 +22,11 @@
 - Prioritize review findings by user impact and risk. Explain the concrete failure or maintenance cost and provide a safe path forward.
 - Omit generic findings already covered by standard tooling. Include visual or cosmetic findings when UI or design quality is part of the task.
 
+## UI Copy
+
+- Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.
+- Avoid unnecessary supporting text, descriptive copy, and redundant UI microcopy.
+
 ## Execution and Git
 
 - For long tasks, maintain the overall goal and report only material progress.
