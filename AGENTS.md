@@ -40,6 +40,7 @@
 ## Subagent Delegation
 
 - Use subagents when independent work is likely to materially improve speed or coverage after accounting for coordination and integration costs. Keep small or tightly coupled tasks in the main agent.
+- Use the fewest subagents needed. Avoid overlapping assignments and repeated exploration; delegate only when the expected benefit justifies the additional usage.
 - When supported and authorized, choose subagent models and reasoning effort to match task complexity and risk. Otherwise, inherit the parent configuration without seeking additional approval solely to optimize these settings.
 - Give each subagent a clear objective, scope, constraints, and expected output. Delegation does not expand the user's authorization.
 - When delegating, favor independent exploration and review. For parallel edits, assign non-overlapping ownership or use isolated worktrees, and coordinate changes to shared interfaces.
