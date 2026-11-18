@@ -30,4 +30,4 @@
 
 - Test observable behavior where a concrete bug, realistic regression, or non-trivial boundary or invariant justifies it. Coverage gains alone do not justify tests that mirror implementation details, literals, mappings, or obvious control flow.
 - For concurrency tests, prefer deterministic coordination or controlled scheduling over arbitrary sleeps when practical.
-- Use comments for non-obvious rationale, invariants, safety constraints, and external quirks. Document public APIs in terms of behavior callers can rely on.
+- Prefer clear names, types, and control flow for internal behavior and invariants. Use comments when the rationale or an external constraint cannot be made clear in code. Document public APIs in terms of behavior callers can rely on.
